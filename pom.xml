@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-  <artifactId>base-core</artifactId>
+  <artifactId>base-ots</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>base-core</name>
+  <name>base-ots</name>
 
   <parent>
     <groupId>com.xinma</groupId>
@@ -20,17 +20,34 @@
 
   <dependencies>
 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
+			<groupId>com.xinma</groupId>
+			<artifactId>base-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
 		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
+			<groupId>com.aliyun.openservices</groupId>
+			<artifactId>ots-public</artifactId>
+		</dependency>
+	
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.javatuples</groupId>
+			<artifactId>javatuples</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
 		</dependency>
   </dependencies>
   	<build>
-		<finalName>base-core</finalName>
+		<finalName>base-ots</finalName>
 		<plugins>
 			<!-- compiler plugin, set the version of JDK -->
 			<plugin>
@@ -74,7 +91,7 @@
 				<version>2.5.3</version>
 				<configuration>
 					<!-- 
-					<tagBase>https://tccsvn.org/tyrepos/server/base-core/tags/</tagBase>
+					<tagBase>https://tccsvn.org/tyrepos/server/base-ots/tags/</tagBase>
 					 -->
 				</configuration>
 			</plugin>
